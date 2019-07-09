@@ -1,0 +1,8 @@
+<script>
+kiwi.plugin('test', function(kiwi, log){
+    var misc = kiwi.require('helpers/Misc');
+    if (!!misc.queryStringVal('autoconnect')) {
+        kiwi.state.setSetting('settings.startupOptions.autoConnect', true);
+    }
+});
+</script>
